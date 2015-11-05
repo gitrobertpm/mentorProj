@@ -17,7 +17,6 @@ STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES
 body {
 	position: relative;
 	font-family: 'Raleway', sans-serif;
-	letter-spacing: .08em;
 }
 
 html,
