@@ -196,10 +196,12 @@ section button {
 .modal {
 	width: 95%;
 	max-width: 700px;
+	max-height: 500px;
 	margin: 10vw auto auto;
 	padding: 15px;
 	background: white;
 	border-radius: 5px;
+	overflow: auto;
 }
 
 .modal h1 {
