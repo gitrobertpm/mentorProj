@@ -17,7 +17,6 @@ STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES
 body {
 	position: relative;
 	font-family: 'Raleway', sans-serif;
-	letter-spacing: .08em;
 }
 
 html,
@@ -196,7 +195,7 @@ section button {
 .modal {
 	width: 95%;
 	max-width: 700px;
-	max-height: 500px;
+	max-height: 425px;
 	margin: 10vw auto auto;
 	padding: 15px;
 	background: white;
