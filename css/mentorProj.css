@@ -1,0 +1,403 @@
+/* ===============================================================
+TREEHOUSE MENTOR PROJECT 
+
+DESIGNED FOR SMALL SCREENS FIRST
+STYLING FOR MEDIUM AND LARGE SCREENS BELOW IN MEDIA QUERRIES 
+=============================================================== */
+
+
+/* ================================
+ GENERAL RESETS AND STYLINGS 
+================================= */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: .08em;
+}
+
+html,
+body,
+header,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q,
+em,
+cite,
+span,
+footer {
+	margin: 0;
+	padding: 0
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	outline: none;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+h1,
+h2 {
+	font-weight: normal;
+	cursor: default;
+}
+
+p {
+	line-height: 1.5em;
+	cursor: default;
+}
+
+button {
+	font-weight: bold;
+	color: white;
+	width: 150px;
+	padding: 10px 8px;
+	border: none;
+	border-radius: 3px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+button:active, button:focus, button:hover {
+	cursor: pointer;
+	font-style: italic;
+}
+
+
+
+/*=================
+ HEADER
+=================*/
+
+header {
+	text-align: center;
+	background: url("../img/headerSm.jpg");
+	background-size: cover;
+}
+
+header button {
+	background: deepskyblue;
+	margin: 20px auto 10px;
+}
+
+header h1 {
+	font-size: 1.8em;
+}
+
+header h2 {
+	font-size: 1.75em;
+}
+
+
+
+/*=================
+ NAV
+=================*/
+
+nav h1 {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+nav ul {
+	width: 275px;
+	margin: 20px auto 10px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	font-size: .7em;
+	color: rgb(100,100,100);
+	background: rgba(255,255,255,0.5);
+	width: 130px;
+	margin: 5px auto auto;
+	padding: 10px 8px;
+	border-radius: 3px;
+}
+
+.selected {
+	color: white;
+	background: deepskyblue;
+}
+
+nav a:active, nav a:focus, nav a:hover {
+	font-style: italic;
+}
+
+
+
+/*=================
+ MAIN WRAPPER
+=================*/
+
+.mainWrapper {
+	margin: auto;
+	text-align: center;
+}
+
+.mainWrapper h1 {
+	margin: 10px auto 25px;
+}
+
+section {
+	display: inline-block;
+	text-align: left;
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+}
+
+section p {
+	font-size: .9em;
+}
+
+section button {
+	margin: 20px auto;
+	background: coral;
+}
+
+
+
+/*=================
+ MODAL
+=================*/
+
+.modalWrapper {
+	position: fixed;
+	top: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	background: rgba(0,0,0,0.8);
+}
+
+.modal {
+	width: 95%;
+	max-width: 700px;
+	margin: 10vw auto auto;
+	padding: 15px;
+	background: white;
+	border-radius: 5px;
+}
+
+.modal h1 {
+	margin: 15px auto;
+}
+
+.closeModal {
+	background: deepskyblue;
+	margin: 20px auto 25px;
+}
+
+
+
+/*=================
+ FOOTER
+=================*/
+
+footer {
+	background: black;
+	padding: 20px;
+}
+
+footer ul {
+	display: inline-block;
+	width: 100px;
+	margin-left: 5%;
+}
+
+footer li {
+	margin: 10px auto;
+}
+
+footer a {
+	color: deepskyblue;
+	font-size: .8em;
+	font-weight: normal;
+}
+
+footer img {
+	width: 20px;
+	margin-right: 5px;
+	margin-bottom: -4px;
+}
+
+footer p {
+	font-size: .8em;
+	color: white;
+	margin-left: 5%;
+}
+
+
+/*================================
+ MEDIA QUERRIES - MEDIUM SCREENS
+================================*/
+
+@media screen and (min-width: 720px) {
+	header {
+		background: url("../img/headerM.jpg");
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+	
+	header h1 {
+		clear: both;
+		font-size: 3em;
+		margin-top: 50px;
+	}
+	
+	header h2 {
+		font-size: 2.5em;
+	}
+	
+	header button {
+		margin-bottom: 75px;
+	}
+	
+	nav {
+		background: black;
+		height: 75px;
+	}
+	
+	nav h1 {
+		float: left;
+		font-weight: bold;
+		font-size: 2em;
+		color: rgb(255, 197, 98);
+		width: auto;
+		height: auto;
+		margin-top: 20px;
+		margin-left: 75px;
+	}
+	
+	nav ul {
+		float: right;
+		width: auto;
+		margin-right: 75px;
+	}
+	
+	nav a {
+		width: auto;
+	}
+	
+	.mainWrapper h1 {
+		font-size: 2.5em;
+	}
+	
+	.modal {
+		margin: 10vw auto auto;
+		padding: 30px;
+		border-radius: 15px;
+	}
+	
+	.modal h1 {
+		font-size: 2.5em;
+		margin: 20px auto;
+	}
+	
+	footer p {
+		float: right;
+		width: 500px;
+		margin-top: 25px;
+		margin-right: 5%;
+		margin-left: 0;
+	}
+}
+
+
+
+/*================================
+ MEDIA QUERRIES - LARGE SCREENS
+================================*/
+
+@media screen and (min-width: 960px) {
+	header {
+		background: url("../img/headerL.jpg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+	
+	nav {
+		position: realtive;
+	}
+
+	nav h1,
+	nav ul	{
+		position: absolute;
+		left: 50%;
+		top: 0px;
+	}
+	
+	nav h1 {
+		margin-left: -440px;
+	}
+	
+	nav ul {
+		margin-left: -40px;
+		margin-right: auto;
+	}
+	
+	nav a {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
+	.mainWrapper {
+		margin: auto;
+		text-align: center;
+	}
+
+	.mainWrapper h1 {
+		margin: 10px auto 25px;
+	}
+
+	section {
+		display: inline-block;
+		text-align: left;
+		vertical-align: text-top;
+		max-width: 300px;
+	}
+	
+	footer {
+		position: relative;
+		height: 150px;
+	}
+	
+	footer ul,
+	footer p{
+		position: absolute;
+		left: 50%;
+		top: 25px;
+	}
+	
+	footer ul {
+		margin-left: -440px;
+	}
+	
+	footer p {
+		margin-left: -40px;
+	}
+}
