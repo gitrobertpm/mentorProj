@@ -19,24 +19,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-html,
-body,
-header,
-section,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-q,
-em,
-cite,
-span,
-footer {
+html, body, header, section, div, h1, h2, h3, h4, h5, h6, p, a, q, em, cite, span, footer {
 	margin: 0;
 	padding: 0
 }
@@ -53,8 +36,7 @@ ul {
 	padding-left: 0px;
 }
 
-h1,
-h2 {
+h1, h2 {
 	font-weight: normal;
 	cursor: default;
 }
@@ -71,14 +53,15 @@ button {
 	padding: 10px 8px;
 	border: none;
 	border-radius: 3px;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
+	-webkit-filter: drop-shadow(0px 1px 1px rgba(50,50,50,.7));filter: drop-shadow(0px 1px 1px rgba(50,50,50,.7));
+	cursor: pointer;
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 }
 
 button:active, button:focus, button:hover {
-	cursor: pointer;
-	font-style: italic;
+	-webkit-filter: drop-shadow(0px 3px 3px rgba(50,50,50,.7));filter: drop-shadow(0px 3px 3px rgba(50,50,50,.7));
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 }
-
 
 
 /*=================
@@ -87,16 +70,20 @@ button:active, button:focus, button:hover {
 
 header {
 	text-align: center;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
 	background: url("../img/headerSm.jpg");
 	background-size: cover;
+	-webkit-filter: drop-shadow(0px 1px 1px rgba(75,75,75,.5));filter: drop-shadow(0px 1px 1px rgba(75,75,75,.5));
 }
 
 header button {
 	background: deepskyblue;
-	margin: 20px auto 10px;
+	margin: 30px auto 10px;
 }
 
 header h1 {
+	margin-top: 20px;
 	font-size: 1.8em;
 }
 
@@ -134,15 +121,19 @@ nav a {
 	margin: 5px auto auto;
 	padding: 10px 8px;
 	border-radius: 3px;
+	cursor: default;
 }
 
 .selected {
 	color: white;
 	background: deepskyblue;
+	cursor: pointer;
 }
 
-nav a:active, nav a:focus, nav a:hover {
-	font-style: italic;
+.selected:active, .selected:focus, .selected:hover {
+	color: rgb(255, 197, 98);
+	-webkit-filter: drop-shadow(0px 3px 3px rgba(50,50,50,.7));filter: drop-shadow(0px 3px 3px rgba(50,50,50,.7));
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 }
 
 
@@ -237,6 +228,12 @@ footer a {
 	color: deepskyblue;
 	font-size: .8em;
 	font-weight: normal;
+}
+
+footer a:active, footer a:focus, footer a:hover {
+	color: coral;
+	-webkit-filter: drop-shadow(0px 3px 3px rgba(50,50,50,.7));filter: drop-shadow(0px 3px 3px rgba(50,50,50,.7));
+	-webkit-transition-duration: .25s;transition-duration: .25s;
 }
 
 footer img {
