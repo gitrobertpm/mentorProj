@@ -96,6 +96,9 @@ header h2 {
 /*=================
  NAV
 =================*/
+nav {
+	padding-top: 25px;
+}
 
 nav h1 {
 	width: 0;
@@ -105,7 +108,7 @@ nav h1 {
 
 nav ul {
 	width: 275px;
-	margin: 20px auto 10px;
+	margin: 0px auto 10px;
 }
 
 nav li {
@@ -286,7 +289,7 @@ footer p {
 		color: rgb(255, 197, 98);
 		width: auto;
 		height: auto;
-		margin-top: 20px;
+		margin-top: 0px;
 		margin-left: 75px;
 	}
 	
@@ -351,11 +354,13 @@ footer p {
 	
 	nav h1 {
 		margin-left: -440px;
+		padding-top: 25px;
 	}
 	
 	nav ul {
 		margin-left: -40px;
 		margin-right: auto;
+		padding-top: 25px;
 	}
 	
 	nav a {
